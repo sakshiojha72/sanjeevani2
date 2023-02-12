@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
 :root{
-  --yellow:#ebd919;
+  --yellow:#ebc519;
   --black:#354046;
 }
 
@@ -19,7 +19,7 @@
 
 *::selection{
   background:var(--black);
-  color:#fff;
+  color:#ffffff;
 }
 
 html{
@@ -29,7 +29,7 @@ html{
 
 body{
   overflow-x: hidden;
-  background-color: antiquewhite;
+  background-color: rgb(20, 26, 22);
 }
 
 section{
@@ -40,7 +40,7 @@ section{
   height:3.5rem;
   width: 15rem;
   background:var(--yellow);
-  color:#fff;
+  color:#dbe278;
   font-size: 1.7rem;
   text-transform: capitalize;
   border-radius: .5rem;
@@ -68,7 +68,7 @@ section{
 
 .button:hover{
   box-shadow: .1rem .5rem var(--yellow),
-              0 .3rem .5rem rgba(0,0,0,.3);
+              0 .3rem .5rem rgba(168, 46, 46, 0.3);
 }
 
 .heading{
@@ -92,7 +92,7 @@ header{
 }
 
 .header-active{
-  background:#fff;
+  background:#1c201c;
   box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
   padding: .5rem 1rem;
 }
@@ -139,7 +139,7 @@ header .nav ul li{
 }
 
 header .nav ul li a{
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 header .fa-bars{
@@ -169,7 +169,7 @@ header .fa-bars{
 }
 
 .about{
-  background:#eee;
+  background:#f3dc5b;
 }
 
 .about .content .box{
@@ -189,7 +189,7 @@ header .fa-bars{
 .about .content .box p{
   font-size: 1.7rem;
   padding-left: 6rem;
-  color:#666;
+  color:#212920;
 }
 
 .facility{
@@ -228,7 +228,7 @@ header .fa-bars{
 }
 
 .review .heading{
-  color:#fff;
+  color:#dfca10;
 }
 
 .review .box-container{
@@ -323,7 +323,7 @@ header .fa-bars{
   margin:2rem 1rem;
   overflow: hidden;
   border-radius: .5rem;
-  box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+  box-shadow: 0 .3rem .5rem rgba(223, 190, 4, 0.3);
 }
 
 .post .box-container .box img{
@@ -349,7 +349,7 @@ header .fa-bars{
 }
 
 .post .box-container .box .content:hover h3{
-  color:var(--orange);
+  color:var(--yellow);
 }
 
 .post .box-container .box .content p{
