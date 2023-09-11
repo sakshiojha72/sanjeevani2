@@ -138,20 +138,25 @@ header .nav ul {
 }
 
 header .nav ul li {
-  margin: 0 1rem;
+  margin-left: 5rem;
 }
 
 header .nav ul li a {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  color: white;
 }
-
+header .nav ul li a:hover {
+  color: var(--yellow);
+}
 header .fa-bars {
   font-size: 3.5rem;
   color: var(--blue);
   cursor: pointer;
   display: none;
 }
-
+.home {
+  margin-top: 5%;
+}
 .home .content h1 {
   font-size: 5rem;
   color: var(--black);
@@ -433,8 +438,8 @@ header .fa-times {
     transform: translate(-50%, -50%);
     box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.3);
     border-radius: 0.5rem;
-    border: 0.3rem solid var(--orange) !important;
-    background: #fff;
+    border: 0.3rem solid var(--yellow) !important;
+    background: #000;
     width: 95%;
     opacity: 0;
   }
@@ -454,6 +459,7 @@ header .fa-times {
   header .nav ul li a {
     font-size: 3rem;
     display: block;
+    color: white;
   }
 
   header .nav-toggle {
