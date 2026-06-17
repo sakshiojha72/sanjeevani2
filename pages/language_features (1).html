@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	
+<button onclick="changeLanguage('eng')">Change to English</button>
+<br>
+<button onclick="changeLanguage('hin')">हिंदी में देखें</button>
+
+<!-- Define the content of the page
+that would be changed -->
+<p id="siteContent">
+	Welcome to the e-Sanjeevani Portal!
+	You can choose any language using the
+	buttons above!
+</p>
+
+
+<script>
+	// Create a function to change
+	// the hash value of the page
+	function changeLanguage(lang) {
+	location.hash = lang;
+	location.reload();
+	}
+
+	// Define the language reload anchors
+	var language = {
+	eng: {
+		welcome: "Welcome to the e-Sanjeevani " +
+		"Portal! You can choose Hindi/English language " +
+		"using the buttons above!"
+	},
+
+	hin: {
+		welcome: " ई-संजीवनी पोर्टल पर आपका स्वागत है! " +
+		"आप ऊपर दिए गए बटन का उपयोग करके किसी भी " +
+		"भाषा को चुन सकते हैं!"
+	}
+	};
+
+	// Check if a hash value exists in the URL
+	if (window.location.hash) {
+	
+	      if (window.location.hash == "#es") {
+        siteContent.textContent =
+          language.es.welcome;
+      }
+
+	// Set the content of the webpage
+	// depending on the hash value
+
+	else if (window.location.hash == "#hin") {
+		siteContent.textContent =
+		language.hin.welcome;
+	}
+	}
+</script>
+</body>
+</html>
